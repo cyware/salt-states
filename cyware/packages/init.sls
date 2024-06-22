@@ -1,0 +1,327 @@
+include:
+  - cyware.packages.dialog
+  - cyware.packages.iputils-ping
+  - cyware.packages.aeskeyfind
+  - cyware.packages.apt-transport-https
+  - cyware.packages.autoconf
+  - cyware.packages.automake
+  - cyware.packages.binutils
+  - cyware.packages.build-essential
+  - cyware.packages.bulk-extractor
+  - cyware.packages.bundler
+  - cyware.packages.clamav-daemon
+  - cyware.packages.curl
+  - cyware.packages.default-jre
+  - cyware.packages.docker
+  - cyware.packages.dos2unix
+  - cyware.packages.epic5
+  - cyware.packages.exfat-utils
+  - cyware.packages.feh
+  - cyware.packages.firefox
+  - cyware.packages.flex
+  - cyware.packages.gdb
+  - cyware.packages.git
+  - cyware.packages.snapd
+  - cyware.packages.snap
+  - cyware.packages.libgraphviz-dev
+  - cyware.packages.graphviz
+  - cyware.packages.ibus
+  - cyware.packages.imagemagick
+  - cyware.packages.inetsim
+  - cyware.packages.inspircd
+  - cyware.packages.ipython3
+  - cyware.packages.lame
+  - cyware.packages.libboost-dev
+  - cyware.packages.libboost-python-dev
+  - cyware.packages.libboost-system-dev
+  - cyware.packages.libemail-outlook-message-perl
+  - cyware.packages.libemu
+  - cyware.packages.libffi-dev
+  - cyware.packages.libfuzzy-dev
+  - cyware.packages.libjpeg-dev
+  - cyware.packages.libjpeg8-dev
+  - cyware.packages.liblzma-dev
+  - cyware.packages.libncurses
+  - cyware.packages.libsqlite3-dev
+  - cyware.packages.libssl-dev
+  - cyware.packages.libtool
+  - cyware.packages.libxml2-dev
+  - cyware.packages.libxslt1-dev
+  - cyware.packages.linux-headers
+  - cyware.packages.ltrace
+  - cyware.packages.mercurial
+  - cyware.packages.nginx
+  - cyware.packages.ngrep
+  - cyware.packages.openssh
+  - cyware.packages.openssl
+  - cyware.packages.7zip
+  - cyware.packages.pdfresurrect
+  - cyware.packages.pkg-config
+  - cyware.packages.python-crypto
+  - cyware.packages.python-dnspython
+  - cyware.packages.enchant
+  - cyware.packages.python-magic
+  - cyware.packages.python-numpy
+  - cyware.packages.python-pil
+  - cyware.packages.python2-pip
+  - cyware.packages.python-pyasn1
+  - cyware.packages.software-properties-common
+  - cyware.packages.python2
+  - cyware.packages.python3
+  - cyware.packages.python3-pip
+  - cyware.packages.qpdf
+  - cyware.packages.radare2
+  - cyware.packages.rhino
+  - cyware.packages.rsakeyfind
+  - cyware.packages.ruby-dev
+  - cyware.packages.ruby
+  - cyware.packages.scalpel
+  - cyware.packages.scite
+  - cyware.packages.ssdeep
+  - cyware.packages.strace
+  - cyware.packages.subversion
+  - cyware.packages.swftools
+  - cyware.packages.sysdig
+  - cyware.packages.tcpdump
+  - cyware.packages.tcpflow
+  - cyware.packages.tcpick
+  - cyware.packages.tcpxtract
+  - cyware.packages.tor
+  - cyware.packages.unhide
+  - cyware.packages.unrar
+  - cyware.packages.upx-ucl
+  - cyware.packages.usbmount
+  - cyware.packages.vbindiff
+  - cyware.packages.wget
+  - cyware.packages.wireshark
+  - cyware.packages.tshark
+  - cyware.packages.wxhexeditor
+  - cyware.packages.xmlstarlet
+  - cyware.packages.evince
+  - cyware.packages.yara
+  - cyware.packages.zlib1g-dev
+  - cyware.packages.sudo
+  - cyware.packages.i386-architecture
+  - cyware.packages.pev
+  - cyware.packages.pdftk-java
+  - cyware.packages.net-tools
+  - cyware.packages.wine
+  - cyware.packages.spidermonkey
+  - cyware.packages.galculator
+  - cyware.packages.libjavassist-java
+  - cyware.packages.vim
+  - cyware.packages.edb-debugger
+  - cyware.packages.xorstrings
+  - cyware.packages.nodejs
+  - cyware.packages.python3-tk
+  - cyware.packages.nautilus
+  - cyware.packages.postgresql
+  - cyware.packages.libolecf
+  - cyware.packages.procdot
+  - cyware.packages.dex2jar
+  - cyware.packages.netcat
+  - cyware.packages.python3-pyqt5
+  - cyware.packages.vscode
+  - cyware.packages.bearparser
+  - cyware.packages.signsrch
+  - cyware.packages.pycdc
+  - cyware.packages.libusb-1
+  - cyware.packages.python3-venv
+  - cyware.packages.python3-virtualenv
+  - cyware.packages.virtualenv
+  - cyware.packages.powershell
+  - cyware.packages.cabextract
+  - cyware.packages.baksmali
+  - cyware.packages.procyon-decompiler
+  - cyware.packages.portex
+  - cyware.packages.msoffice-crypt
+  - cyware.packages.flare-floss
+  - cyware.packages.sqlite
+  - cyware.packages.nsrllookup
+  - cyware.packages.binee
+  - cyware.packages.xorsearch
+  - cyware.packages.oledump
+  - cyware.packages.nano
+  - cyware.packages.file
+  - cyware.packages.android-project-creator
+  - cyware.packages.libdpkg-perl
+  - cyware.packages.sandfly-processdecloak
+  - cyware.packages.sleuthkit
+  - cyware.packages.ilspy
+  - cyware.packages.ghidra
+  - cyware.packages.bddisasm
+  - cyware.packages.tzdata
+  - cyware.packages.binwalk
+  - cyware.packages.nasm
+  - cyware.packages.scdbg
+  - cyware.packages.jq
+  - cyware.packages.runsc
+  - cyware.packages.evilclippy
+  - cyware.packages.rar
+  - cyware.packages.sharutils
+  - cyware.packages.burpsuite-community
+  - cyware.packages.msitools
+
+cyware-packages:
+  test.nop:
+    - require:
+      - sls: cyware.packages.aeskeyfind
+      - sls: cyware.packages.apt-transport-https
+      - sls: cyware.packages.autoconf
+      - sls: cyware.packages.automake
+      - sls: cyware.packages.binutils
+      - sls: cyware.packages.build-essential
+      - sls: cyware.packages.bulk-extractor
+      - sls: cyware.packages.bundler
+      - sls: cyware.packages.clamav-daemon
+      - sls: cyware.packages.curl
+      - sls: cyware.packages.snapd
+      - sls: cyware.packages.snap  
+      - sls: cyware.packages.default-jre
+      - sls: cyware.packages.docker
+      - sls: cyware.packages.dos2unix
+      - sls: cyware.packages.epic5
+      - sls: cyware.packages.exfat-utils
+      - sls: cyware.packages.feh
+      - sls: cyware.packages.firefox
+      - sls: cyware.packages.flex
+      - sls: cyware.packages.gdb
+      - sls: cyware.packages.git
+      - sls: cyware.packages.libgraphviz-dev
+      - sls: cyware.packages.graphviz
+      - sls: cyware.packages.ibus
+      - sls: cyware.packages.imagemagick
+      - sls: cyware.packages.inetsim
+      - sls: cyware.packages.inspircd
+      - sls: cyware.packages.ipython3
+      - sls: cyware.packages.lame
+      - sls: cyware.packages.libboost-dev
+      - sls: cyware.packages.libboost-python-dev
+      - sls: cyware.packages.libboost-system-dev
+      - sls: cyware.packages.libemail-outlook-message-perl
+      - sls: cyware.packages.libemu
+      - sls: cyware.packages.libffi-dev
+      - sls: cyware.packages.libfuzzy-dev
+      - sls: cyware.packages.libjpeg-dev
+      - sls: cyware.packages.libjpeg8-dev
+      - sls: cyware.packages.liblzma-dev
+      - sls: cyware.packages.libncurses
+      - sls: cyware.packages.libsqlite3-dev
+      - sls: cyware.packages.libssl-dev
+      - sls: cyware.packages.libtool
+      - sls: cyware.packages.libxml2-dev
+      - sls: cyware.packages.libxslt1-dev
+      - sls: cyware.packages.linux-headers
+      - sls: cyware.packages.ltrace
+      - sls: cyware.packages.mercurial
+      - sls: cyware.packages.nginx
+      - sls: cyware.packages.ngrep
+      - sls: cyware.packages.openssh
+      - sls: cyware.packages.openssl
+      - sls: cyware.packages.7zip
+      - sls: cyware.packages.pdfresurrect
+      - sls: cyware.packages.pkg-config
+      - sls: cyware.packages.python-crypto
+      - sls: cyware.packages.python-dnspython
+      - sls: cyware.packages.enchant
+      - sls: cyware.packages.python-magic
+      - sls: cyware.packages.python-numpy
+      - sls: cyware.packages.python-pil
+      - sls: cyware.packages.python2-pip
+      - sls: cyware.packages.python-pyasn1
+      - sls: cyware.packages.software-properties-common
+      - sls: cyware.packages.python2
+      - sls: cyware.packages.python3
+      - sls: cyware.packages.python3-pip
+      - sls: cyware.packages.qpdf
+      - sls: cyware.packages.radare2
+      - sls: cyware.packages.rhino
+      - sls: cyware.packages.rsakeyfind
+      - sls: cyware.packages.ruby-dev
+      - sls: cyware.packages.ruby
+      - sls: cyware.packages.scalpel
+      - sls: cyware.packages.scite
+      - sls: cyware.packages.ssdeep
+      - sls: cyware.packages.strace
+      - sls: cyware.packages.subversion
+      - sls: cyware.packages.swftools
+      - sls: cyware.packages.sysdig
+      - sls: cyware.packages.tcpdump
+      - sls: cyware.packages.tcpflow
+      - sls: cyware.packages.tcpick
+      - sls: cyware.packages.tcpxtract
+      - sls: cyware.packages.tor
+      - sls: cyware.packages.unhide
+      - sls: cyware.packages.unrar
+      - sls: cyware.packages.upx-ucl
+      - sls: cyware.packages.usbmount
+      - sls: cyware.packages.vbindiff
+      - sls: cyware.packages.wget
+      - sls: cyware.packages.wireshark
+      - sls: cyware.packages.tshark
+      - sls: cyware.packages.wxhexeditor
+      - sls: cyware.packages.xmlstarlet
+      - sls: cyware.packages.evince
+      - sls: cyware.packages.yara
+      - sls: cyware.packages.zlib1g-dev
+      - sls: cyware.packages.sudo
+      - sls: cyware.packages.i386-architecture
+      - sls: cyware.packages.pev
+      - sls: cyware.packages.pdftk-java
+      - sls: cyware.packages.net-tools
+      - sls: cyware.packages.wine
+      - sls: cyware.packages.spidermonkey
+      - sls: cyware.packages.galculator
+      - sls: cyware.packages.libjavassist-java
+      - sls: cyware.packages.vim
+      - sls: cyware.packages.edb-debugger
+      - sls: cyware.packages.xorstrings
+      - sls: cyware.packages.nodejs
+      - sls: cyware.packages.python3-tk
+      - sls: cyware.packages.nautilus
+      - sls: cyware.packages.postgresql
+      - sls: cyware.packages.libolecf
+      - sls: cyware.packages.procdot
+      - sls: cyware.packages.dex2jar
+      - sls: cyware.packages.netcat
+      - sls: cyware.packages.python3-pyqt5
+      - sls: cyware.packages.vscode
+      - sls: cyware.packages.bearparser
+      - sls: cyware.packages.signsrch
+      - sls: cyware.packages.pycdc
+      - sls: cyware.packages.libusb-1
+      - sls: cyware.packages.python3-venv
+      - sls: cyware.packages.python3-virtualenv
+      - sls: cyware.packages.virtualenv
+      - sls: cyware.packages.powershell
+      - sls: cyware.packages.cabextract
+      - sls: cyware.packages.baksmali
+      - sls: cyware.packages.procyon-decompiler
+      - sls: cyware.packages.portex
+      - sls: cyware.packages.msoffice-crypt
+      - sls: cyware.packages.flare-floss
+      - sls: cyware.packages.sqlite
+      - sls: cyware.packages.nsrllookup
+      - sls: cyware.packages.binee
+      - sls: cyware.packages.xorsearch
+      - sls: cyware.packages.oledump
+      - sls: cyware.packages.nano
+      - sls: cyware.packages.file
+      - sls: cyware.packages.android-project-creator
+      - sls: cyware.packages.libdpkg-perl
+      - sls: cyware.packages.sandfly-processdecloak
+      - sls: cyware.packages.sleuthkit
+      - sls: cyware.packages.ilspy
+      - sls: cyware.packages.ghidra
+      - sls: cyware.packages.bddisasm
+      - sls: cyware.packages.tzdata
+      - sls: cyware.packages.binwalk
+      - sls: cyware.packages.nasm
+      - sls: cyware.packages.scdbg
+      - sls: cyware.packages.jq
+      - sls: cyware.packages.runsc
+      - sls: cyware.packages.evilclippy
+      - sls: cyware.packages.rar
+      - sls: cyware.packages.sharutils
+      - sls: cyware.packages.burpsuite-community
+      - sls: cyware.packages.msitools

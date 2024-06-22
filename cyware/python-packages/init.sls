@@ -1,0 +1,53 @@
+include:
+  - cyware.python-packages.bitstring
+  - cyware.python-packages.bottle
+  - cyware.python-packages.cryptography
+  - cyware.python-packages.distorm3
+  - cyware.python-packages.fuzzywuzzy
+  - cyware.python-packages.ndg-httpsclient
+  - cyware.python-packages.olefile
+  - cyware.python-packages.pydeep
+  - cyware.python-packages.pygeoip
+  - cyware.python-packages.pypdns
+  - cyware.python-packages.pypssl
+  - cyware.python-packages.requesocks
+  - cyware.python-packages.setuptools
+  - cyware.python-packages.shodan
+  - cyware.python-packages.six
+  - cyware.python-packages.wheel
+  - cyware.python-packages.peepdf
+  - cyware.python-packages.pype32
+  - cyware.python-packages.vipermonkey
+  - cyware.python-packages.volatility
+  - cyware.python-packages.ioc-writer
+  - cyware.python-packages.balbuzard
+  - cyware.python-packages.poster
+  - cyware.python-packages.fakenet-ng
+
+cyware-python-packages:
+  test.nop:
+    - require:
+      - sls: cyware.python-packages.bitstring
+      - sls: cyware.python-packages.bottle
+      - sls: cyware.python-packages.cryptography
+      - sls: cyware.python-packages.distorm3
+      - sls: cyware.python-packages.fuzzywuzzy
+      - sls: cyware.python-packages.ndg-httpsclient
+      - sls: cyware.python-packages.olefile
+      - sls: cyware.python-packages.pydeep
+      - sls: cyware.python-packages.pygeoip
+      - sls: cyware.python-packages.pypdns
+      - sls: cyware.python-packages.pypssl
+      - sls: cyware.python-packages.requesocks
+      - sls: cyware.python-packages.setuptools
+      - sls: cyware.python-packages.shodan
+      - sls: cyware.python-packages.six
+      - sls: cyware.python-packages.wheel
+      - sls: cyware.python-packages.peepdf
+      - sls: cyware.python-packages.pype32
+      - sls: cyware.python-packages.vipermonkey
+      - sls: cyware.python-packages.volatility
+      - sls: cyware.python-packages.ioc-writer
+      - sls: cyware.python-packages.balbuzard
+      - sls: cyware.python-packages.poster
+      - sls: cyware.python-packages.fakenet-ng

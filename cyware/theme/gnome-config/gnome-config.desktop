@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=gnome-config
+Exec=/usr/local/share/cyware/gnome-config.sh

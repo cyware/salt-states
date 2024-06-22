@@ -1,0 +1,103 @@
+include:
+  - cyware.scripts.pdf-parser
+  - cyware.scripts.pdfid
+  - cyware.scripts.emldump
+  - cyware.scripts.extractscripts
+  - cyware.scripts.virustotal-search
+  - cyware.scripts.base64dump
+  - cyware.scripts.java_idx_parser
+  - cyware.scripts.ex_pe_xor
+  - cyware.scripts.extract_swf
+  - cyware.scripts.brxor
+  - cyware.scripts.nomorexor
+  - cyware.scripts.xorbruteforcer
+  - cyware.scripts.strdeob
+  - cyware.scripts.pyinstaller-extractor
+  - cyware.scripts.linuxmemdiff
+  - cyware.scripts.rtfdump
+  - cyware.scripts.virustotal-submit
+  - cyware.scripts.hash-identifier
+  - cyware.scripts.disitool
+  - cyware.scripts.cut-bytes
+  - cyware.scripts.xor-kpa
+  - cyware.scripts.dexray
+  - cyware.scripts.accept-all-ips
+  - cyware.scripts.myip
+  - cyware.scripts.mynic
+  - cyware.scripts.translate
+  - cyware.scripts.zipdump
+  - cyware.scripts.xmldump
+  - cyware.scripts.pecheck
+  - cyware.scripts.msoffcrypto-crack
+  - cyware.scripts.unxor
+  - cyware.scripts.numbers-to-string
+  - cyware.scripts.pdftool
+  - cyware.scripts.anomy
+  - cyware.scripts.shcode2exe
+  - cyware.scripts.dllcharacteristics
+  - cyware.scripts.1768
+  - cyware.scripts.re-search
+  - cyware.scripts.sets
+  - cyware.scripts.format-bytes
+  - cyware.scripts.texteditor
+  - cyware.scripts.dnsresolver
+  - cyware.scripts.decode-vbe
+  - cyware.scripts.cs-decrypt-metadata
+  - cyware.scripts.cs-extract-key
+  - cyware.scripts.file-magic
+  - cyware.scripts.myjson-filter
+  - cyware.scripts.strings
+  - cyware.scripts.sortcanon
+
+cyware-scripts:
+  test.nop:
+    - require:
+      - sls: cyware.scripts.pdf-parser
+      - sls: cyware.scripts.pdfid
+      - sls: cyware.scripts.emldump
+      - sls: cyware.scripts.extractscripts
+      - sls: cyware.scripts.virustotal-search
+      - sls: cyware.scripts.base64dump
+      - sls: cyware.scripts.java_idx_parser
+      - sls: cyware.scripts.ex_pe_xor
+      - sls: cyware.scripts.extract_swf
+      - sls: cyware.scripts.brxor
+      - sls: cyware.scripts.nomorexor
+      - sls: cyware.scripts.xorbruteforcer
+      - sls: cyware.scripts.strdeob
+      - sls: cyware.scripts.pyinstaller-extractor
+      - sls: cyware.scripts.linuxmemdiff
+      - sls: cyware.scripts.rtfdump
+      - sls: cyware.scripts.virustotal-submit
+      - sls: cyware.scripts.hash-identifier
+      - sls: cyware.scripts.disitool
+      - sls: cyware.scripts.cut-bytes
+      - sls: cyware.scripts.xor-kpa
+      - sls: cyware.scripts.dexray
+      - sls: cyware.scripts.accept-all-ips
+      - sls: cyware.scripts.myip
+      - sls: cyware.scripts.mynic
+      - sls: cyware.scripts.translate
+      - sls: cyware.scripts.zipdump
+      - sls: cyware.scripts.xmldump
+      - sls: cyware.scripts.pecheck
+      - sls: cyware.scripts.msoffcrypto-crack
+      - sls: cyware.scripts.unxor
+      - sls: cyware.scripts.numbers-to-string
+      - sls: cyware.scripts.pdftool
+      - sls: cyware.scripts.anomy
+      - sls: cyware.scripts.shcode2exe
+      - sls: cyware.scripts.dllcharacteristics
+      - sls: cyware.scripts.1768
+      - sls: cyware.scripts.re-search
+      - sls: cyware.scripts.sets
+      - sls: cyware.scripts.format-bytes
+      - sls: cyware.scripts.texteditor
+      - sls: cyware.scripts.dnsresolver
+      - sls: cyware.scripts.decode-vbe
+      - sls: cyware.scripts.cs-decrypt-metadata
+      - sls: cyware.scripts.cs-extract-key
+      - sls: cyware.scripts.file-magic
+      - sls: cyware.scripts.myjson-filter
+      - sls: cyware.scripts.strings
+      - sls: cyware.scripts.sortcanon

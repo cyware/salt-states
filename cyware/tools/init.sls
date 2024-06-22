@@ -1,0 +1,57 @@
+include:
+  - cyware.tools.automater
+  - cyware.tools.js-patched
+  - cyware.tools.flare
+  - cyware.tools.flasm
+  - cyware.tools.networkminer
+  - cyware.tools.jad
+  - cyware.tools.jd-gui
+  - cyware.tools.cyberchef
+  - cyware.tools.cfr
+  - cyware.tools.cutter
+  - cyware.tools.fakedns
+  - cyware.tools.shellcode2exe-bat
+  - cyware.tools.bytehist
+  - cyware.tools.binnavi
+  - cyware.tools.de4dot
+  - cyware.tools.trid
+  - cyware.tools.manalyze
+  - cyware.tools.apktool
+  - cyware.tools.polarproxy
+  - cyware.tools.ssview
+  - cyware.tools.yara-rules
+  - cyware.tools.captipper
+  - cyware.tools.jadx
+  - cyware.tools.detect-it-easy
+  - cyware.tools.capa
+  - cyware.tools.docker-compose
+
+cyware-tools:
+  test.nop:
+    - require:
+      - sls: cyware.tools.automater
+      - sls: cyware.tools.js-patched
+      - sls: cyware.tools.flare
+      - sls: cyware.tools.flasm
+      - sls: cyware.tools.networkminer
+      - sls: cyware.tools.jad
+      - sls: cyware.tools.jd-gui
+      - sls: cyware.tools.cyberchef
+      - sls: cyware.tools.cfr
+      - sls: cyware.tools.cutter
+      - sls: cyware.tools.fakedns
+      - sls: cyware.tools.shellcode2exe-bat
+      - sls: cyware.tools.bytehist
+      - sls: cyware.tools.binnavi
+      - sls: cyware.tools.de4dot
+      - sls: cyware.tools.trid
+      - sls: cyware.tools.manalyze
+      - sls: cyware.tools.apktool
+      - sls: cyware.tools.polarproxy
+      - sls: cyware.tools.ssview
+      - sls: cyware.tools.yara-rules
+      - sls: cyware.tools.captipper
+      - sls: cyware.tools.jadx
+      - sls: cyware.tools.detect-it-easy
+      - sls: cyware.tools.capa
+      - sls: cyware.tools.docker-compose

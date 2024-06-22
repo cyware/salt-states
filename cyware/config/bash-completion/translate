@@ -1,0 +1,13 @@
+. /etc/bash_completion.d/cywarelib
+
+_translate() 
+{
+	local cur
+	cur="${COMP_WORDS[COMP_CWORD]}"
+	
+	case "$cur" in -*)
+		_parse_args "translate.py -h"
+	esac
+}
+
+complete -d -o default -F _translate translate.py

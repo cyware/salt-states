@@ -1,0 +1,13 @@
+. /etc/bash_completion.d/cywarelib
+
+_cyware() 
+{
+        local cur
+        cur="${COMP_WORDS[COMP_CWORD]}"
+
+        case "$cur" in -*)
+                _parse_args "cyware -h"
+        esac
+}
+
+complete -d -o default -F _cyware cyware

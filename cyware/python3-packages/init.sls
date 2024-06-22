@@ -1,0 +1,119 @@
+include:
+  - cyware.python3-packages.pip
+  - cyware.python3-packages.setuptools
+  - cyware.python3-packages.wheel
+  - cyware.python3-packages.requests
+  - cyware.python3-packages.cryptography
+  - cyware.python3-packages.androguard
+  - cyware.python3-packages.ioc-parser
+  - cyware.python3-packages.ipwhois
+  - cyware.python3-packages.jsbeautifier
+  - cyware.python3-packages.mitmproxy
+  - cyware.python3-packages.olefile
+  - cyware.python3-packages.peframe
+  - cyware.python3-packages.pyelftools
+  - cyware.python3-packages.r2pipe
+  - cyware.python3-packages.virustotal-api
+  - cyware.python3-packages.xortool
+  - cyware.python3-packages.xxxswf
+  - cyware.python3-packages.thug
+  - cyware.python3-packages.xlmmacrodeobfuscator
+  - cyware.python3-packages.unicode
+  - cyware.python3-packages.volatility3
+  - cyware.python3-packages.fakemail
+  - cyware.python3-packages.pyperclip
+  - cyware.python3-packages.dc3-mwcp
+  - cyware.python3-packages.yara-python3
+  - cyware.python3-packages.ratdecoders
+  - cyware.python3-packages.pylzma
+  - cyware.python3-packages.time-decode
+  - cyware.python3-packages.pcodedmp
+  - cyware.python3-packages.droidlysis
+  - cyware.python3-packages.malwoverview
+  - cyware.python3-packages.chepy
+  - cyware.python3-packages.frida
+  - cyware.python3-packages.stringsifter
+  - cyware.python3-packages.oletools
+  - cyware.python3-packages.pycryptodomex
+  - cyware.python3-packages.unfurl
+  - cyware.python3-packages.speakeasy
+  - cyware.python3-packages.msoffcrypto-tool
+  - cyware.python3-packages.qiling
+  - cyware.python3-packages.pe-tree
+  - cyware.python3-packages.hachoir
+  - cyware.python3-packages.msg-extractor
+  - cyware.python3-packages.name-that-hash
+  - cyware.python3-packages.malchive
+  - cyware.python3-packages.vivisect
+  - cyware.python3-packages.pcode2code
+  - cyware.python3-packages.mail-parser
+  - cyware.python3-packages.csce
+  - cyware.python3-packages.jinja2
+  - cyware.python3-packages.dnfile
+  - cyware.python3-packages.dotnetfile
+  - cyware.python3-packages.debloat
+  - cyware.python3-packages.pylibemu
+  - cyware.python3-packages.peepdf-3
+  - cyware.python3-packages.dissect
+  - cyware.python3-packages.magika
+
+cyware-python3-packages:
+  test.nop:
+    - require:
+      - sls: cyware.python3-packages.pip
+      - sls: cyware.python3-packages.setuptools
+      - sls: cyware.python3-packages.wheel
+      - sls: cyware.python3-packages.requests
+      - sls: cyware.python3-packages.cryptography
+      - sls: cyware.python3-packages.androguard
+      - sls: cyware.python3-packages.ioc-parser
+      - sls: cyware.python3-packages.ipwhois
+      - sls: cyware.python3-packages.jsbeautifier
+      - sls: cyware.python3-packages.mitmproxy
+      - sls: cyware.python3-packages.olefile
+      - sls: cyware.python3-packages.peframe
+      - sls: cyware.python3-packages.pyelftools
+      - sls: cyware.python3-packages.r2pipe
+      - sls: cyware.python3-packages.virustotal-api
+      - sls: cyware.python3-packages.xortool
+      - sls: cyware.python3-packages.xxxswf
+      - sls: cyware.python3-packages.thug
+      - sls: cyware.python3-packages.xlmmacrodeobfuscator
+      - sls: cyware.python3-packages.unicode
+      - sls: cyware.python3-packages.volatility3
+      - sls: cyware.python3-packages.fakemail
+      - sls: cyware.python3-packages.pyperclip
+      - sls: cyware.python3-packages.dc3-mwcp
+      - sls: cyware.python3-packages.yara-python3
+      - sls: cyware.python3-packages.ratdecoders
+      - sls: cyware.python3-packages.pylzma
+      - sls: cyware.python3-packages.time-decode
+      - sls: cyware.python3-packages.pcodedmp
+      - sls: cyware.python3-packages.droidlysis
+      - sls: cyware.python3-packages.malwoverview
+      - sls: cyware.python3-packages.chepy
+      - sls: cyware.python3-packages.frida
+      - sls: cyware.python3-packages.stringsifter
+      - sls: cyware.python3-packages.oletools
+      - sls: cyware.python3-packages.pycryptodomex
+      - sls: cyware.python3-packages.unfurl
+      - sls: cyware.python3-packages.speakeasy
+      - sls: cyware.python3-packages.msoffcrypto-tool
+      - sls: cyware.python3-packages.qiling
+      - sls: cyware.python3-packages.pe-tree
+      - sls: cyware.python3-packages.hachoir
+      - sls: cyware.python3-packages.msg-extractor
+      - sls: cyware.python3-packages.name-that-hash
+      - sls: cyware.python3-packages.malchive
+      - sls: cyware.python3-packages.vivisect
+      - sls: cyware.python3-packages.pcode2code
+      - sls: cyware.python3-packages.mail-parser
+      - sls: cyware.python3-packages.csce
+      - sls: cyware.python3-packages.jinja2
+      - sls: cyware.python3-packages.dnfile
+      - sls: cyware.python3-packages.dotnetfile
+      - sls: cyware.python3-packages.debloat
+      - sls: cyware.python3-packages.pylibemu
+      - sls: cyware.python3-packages.peepdf-3
+      - sls: cyware.python3-packages.dissect
+      - sls: cyware.python3-packages.magika
