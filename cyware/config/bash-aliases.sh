@@ -59,15 +59,15 @@ function httpd {
 # A wrapper around the "cyware" command to avoid having to specify "sudo"
 function cyware {
     SUDO=/usr/bin/sudo
-    REMNUX_CLI=/usr/local/bin/cyware
+    CYWARE_CLI=/usr/local/bin/cyware
   if [ -e $SUDO ]; then
     if [ "$USER" == "root" ]; then
-      $REMNUX_CLI ${*}
+      $CYWARE_CLI ${*}
     else
-      sudo $REMNUX_CLI ${*}
+      sudo $CYWARE_CLI ${*}
     fi
   else
-    $REMNUX_CLI ${*}
+    $CYWARE_CLI ${*}
   fi
 }
 
